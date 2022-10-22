@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Everyday Goods</title>
+        <link rel="stylesheet" type="text/css" href="styler.css">
+        <link href="script.js">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="">
+
+    </head>
+    <body>
+        <h1 align="center">Welcome to Everyday Goods!</h1>
+        <h2 align="center">We have a product for you to purchase!</h2>
+        <h3 align="center">Please scroll down so you can view everything here!</h3>
+
+        <button class="blackjack"> <a href="file:///C:/Users/Public/website/blackjack.html"> Play Blackjack!</a></button>
+
+        <div class="product">
+    <p class="product_title"><b>Price of Product:</b></p>
+    <p class="product_price">
+        <small><b>$</b></small>
+        <span><b>10</b></span>
+    </p>
+    <div class="product_rating">
+        <p> 5 <i class="fa fa-star" aria-hidden="true"></i> <img src="https://raw.githubusercontent.com/amagicman123456/everydaygoods/main/5bar.png"></p>
+        <p> 4 <i class="fa fa-star" aria-hidden="true"></i> <img src="https://raw.githubusercontent.com/amagicman123456/everydaygoods/main/4bar.png"></p>
+        <p> 3 <i class="fa fa-star" aria-hidden="true"></i> <img src="https://raw.githubusercontent.com/amagicman123456/everydaygoods/main/3bar.png"></p>
+        <p> 2 <i class="fa fa-star" aria-hidden="true"></i> <img src="https://raw.githubusercontent.com/amagicman123456/everydaygoods/main/2bar.png"></p>
+        <p> 1 <i class="fa fa-star" aria-hidden="true"></i> <img src="https://raw.githubusercontent.com/amagicman123456/everydaygoods/main/1bar.png"></p>
+    </div>
+    <img src="https://raw.githubusercontent.com/amagicman123456/everydaygoods/main/Hills.png" alt="product" class="product_image" border="5">
+    <br>
+    <p>
+       <button class="test"><a href="https://amagicman123456.github.io/everydaygoods/website/info.html"> Buy now with Credit Card!</a></button>
+    </p>
+
+    <p>
+        <button class="test2"><a href="https://amagicman123456.github.io/everydaygoods/website/QR.html"> Click here to scan with QR Code (PayPal or Zelle)</a></button>
+    </p>
+
+            <div id="smart-button-container">
+      <div style="text-align: left;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'paypal',
+
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
+
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>
+        <br>
+
+    </div>
+        <p>
+            click <a href="https://amagicman123456.github.io/everydaygoods/website/links.html" target="_blank">here</a> to go to my fake linktree
+        </p>
+
+        <button class="doctor_checkup">
+            Go to the doctor's office and check up (you are either good or sick)
+        </button>
+        <br>
+        some fruits you should buy at the grocery store:
+        <ul>
+            <li>apples
+                <ul>
+                    <li>golden delicious`</li>
+                    <li>granny smith</li>
+                    <li>gala</li>
+                </ul>
+            </li>
+            <li>oranges</li>
+            <li>pineapples</li>
+            <li>mangoes</li>
+            <li>dragonfruit</li>
+        </ul>
+
+        <table border="10" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Month</th>
+                <th>Rent</th>
+                <th>Utilities</th>
+                <th>Groceries</th>
+                <th>Eating Out</th>
+                <th>Entertainment</th>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>$1500</td>
+                <td>$150</td>
+                <td>$350</td>
+                <td>$100</td>
+                <td>$50</td>
+            </tr>
+        </table>
+        <script src="index.js"></script>
+    </body>
+</html>

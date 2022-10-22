@@ -1,0 +1,62 @@
+.copy_text .clipboard {
+    padding: 0px;
+    margin: 2px;
+    height: 24px;
+    transform: translate(5%, 20%)
+}
+
+.label {
+    font-family: "Roboto", sans-serif;
+    padding: 2px;
+    margin: 1px;
+}
+
+.copy_text input.text {
+    width: clamp(200px, 35%, 600px);
+    font-family: "Arial";
+    padding: 3px;
+    font-size: 15px;
+}
+
+.copy_text button {
+    padding: 10px;
+    background: #5784f5;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.copy_text button:active {
+    background: #809ce2;
+}
+
+.copy_text button:before {
+    content: "Copied";
+    position: absolute;
+    top: -45px;
+    right: -25px;
+    background: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    visibility: hidden;
+}
+
+.copy_text button:after {
+    content: "";
+    position: absolute;
+    top: -17px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    background: #5c81dc;
+    transform: rotate(45deg);
+    visibility: hidden;
+}
+
+.copy_text.active button:before,
+.copy_text.active button:after {
+    visibility: visible;
+}

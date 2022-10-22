@@ -1,0 +1,51 @@
+ .blackjack {
+    white-space: normal;
+    background: none;
+    margin: 2px;
+    padding: 4px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(235, 238, 241);
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    min-height: 56px;
+    max-height: 56px;
+ }
+
+ .test {
+    white-space: normal;
+    background: none;
+    margin: 2px;
+    padding: 4px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(235, 238, 241);
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.test2 {
+    white-space: normal;
+    background: none;
+    margin: 2px;
+    padding: 4px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(235, 238, 241);
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.doctor_checkup {
+    white-space: normal;
+    background: none;
+    margin: 2px;
+    padding: 4px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(235, 238, 241);
+    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+    min-height: 56px;
+    max-height: 56px;
+}
