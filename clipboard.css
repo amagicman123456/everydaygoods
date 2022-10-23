@@ -12,7 +12,7 @@
 }
 
 .copy_text input.text {
-    width: clamp(200px, 30%, 600px);
+    width: clamp(200px, 27.6%, 600px);
     font-family: "Arial";
     padding: 3px;
     font-size: 15px;
