@@ -1,3 +1,17 @@
+ .block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: -40px;
+    left: 4000px;
+    animation: block 0.5s infinite linear;
+    animation-delay: calc(var(--order) * -35ms);
+}
+@keyframes block {
+    0%{left:480px);}
+    100%{left:-40px;}
+}
  .para {
     font-size: 30px;
  }
